@@ -310,6 +310,7 @@ def average_numb(a=10, b=7):
     res = (a+b)/2
     return res
 
+print(average_numb())
 
 # print(average_numb(a))
 # n = int(input("Enter first number: "))
