@@ -82,3 +82,5 @@ print(squares_list)
 
 # for key in squares.values():
 #     print(key)
+
+females = {"population": 1234325145}
