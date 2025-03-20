@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="profile.py" method="get">
+        <div>
+            <label for="name">first name</label>
+            <input type="text" name="name" id="name" placeholder="name" required>
+        </div>
+
+        <br>
+
+        <div>
+            <label for="surname">last name</label>
+            <input type="text" name="surname" id="surname" placeholder="surname">
+        </div>
+
+        <br>
+
+        <div>
+            <label for="password">password</label>
+            <input type="password" name="password" id="password" placeholder="password" maxlength="12">
+        </div>
+
+        <br>
+
+        <div>
+            <label for="email">email</label>
+            <input type="email" name="email" id="email" placeholder="test@test.com">
+        </div>
+
+        <br>
+
+        <div>
+            <label for="phone">email</label>
+            <input type="phone" name="phone" id="phone" placeholder="511-11-11-11">
+        </div>
+
+        <br>
+
+        <div>
+            <label for="bdate">bdate</label>
+            <input type="date" name="bdate" id="bdate">
+        </div>
+
+        <br>
+
+        
+        <div>
+            <label for="age">age</label>
+            <input type="number" name="age" id="age" placeholder="age" min="0" max="100" value="13">
+        </div>
+
+        <br>
+
+        <div>
+            <label for="gender">What is your genda? </label>
+
+            <label>Man</label>
+            <input type="radio" name="gender" id="man">
+
+            <label>Woman</label>
+            <input type="radio" name="gender" id="woman">
+
+            <label>I'm a mechanic</label>
+            <input type="radio" name="gender" id="mechanic">
+        </div>
+
+        <br>
+
+        <div>
+            <label for="movie">Choose one: </label>
+
+            <select name="movie" id="movie">
+                <option value="spiderman1">spiderman1</option>
+                <option value="spiderman2">spiderman2</option>
+                <option value="spiderman3">spiderman3</option>
+            </select>
+        </div>
+
+        <br>
+
+        <div>
+            <label for="checkbox">he's a 10 but he's a mechanic. still 10? </label>
+            <input type="checkbox" name="checkbox" id="checkbox">
+        </div>
+
+        <br>
+
+        <div>
+            <input type="reset">
+        </div>
+
+        <br>
+
+        <div>
+            <input type="submit">
+        </div>
+    </form>
+</body>
+</html>
