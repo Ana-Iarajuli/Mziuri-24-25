@@ -1,0 +1,41 @@
+/** {*/
+/*    margin: 0;*/
+/*    padding: 0;*/
+/*}*/
+
+
+/*h3, p, h1, div, img*/
+/*{*/
+/*    background: #f38cf3;*/
+/*    text-align: center;*/
+/*}*/
+
+#title {
+    color: red;
+}
+
+h1 {
+    color: red;
+    font-weight: lighter;
+    font-size: 20px;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+
+/*.google {*/
+/*    text-align: left;*/
+/*    color: yellow;*/
+/*}*/
+
+
+h4 {
+    border-color: black;
+    border-style: solid;
+    /*border: 1px solid black;*/
+    border-width: 10px;
+}
+
+
+
+
