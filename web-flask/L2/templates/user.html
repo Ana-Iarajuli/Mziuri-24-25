@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Profile</title>
+</head>
+<body>
+    <h1>Hello {{ user_name, user_surname }}</h1>
+    <h2>Your age is {{ user_age }}</h2>
+    {% for subject in user_subjects %}
+        <h3>{{ subject }}:</h3>
+        {% if subject == "ქართული" %}
+            <p>გამოცდა გაქვს 6 ივლისს</p>
+        {% endif %}
+    {% endfor %}
+<!--    {% for number in range (100) %}-->
+<!--        {% if number % 2 != 0 %}-->
+<!--            <p>{{ number }}</p>-->
+<!--        {% endif %}-->
+<!--    {% endfor %}-->
+</body>
+</html>

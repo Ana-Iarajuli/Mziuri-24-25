@@ -37,7 +37,7 @@ class Square(Quadrangle):
 # q1 = Quadrangle(1, 2, 3, 4, 'blue')
 # q1.say_hi()
 t1 = Triangle(1, 2, 3, "yellow")
-# t1.say_hi()
+t1.say_hi()
 #
 # print(isinstance(q1, Shape)) # boolean
 # print(isinstance(q1, Triangle)) # boolean
