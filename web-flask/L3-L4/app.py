@@ -1,8 +1,9 @@
-from flask import Flask, redirect, url_for, render_template, request
+from flask import (Flask, redirect, url_for,
+                   render_template, request, session)
 app = Flask(__name__)
 
 
-@app.route('/')
+@app.route('/', methods=['GET', 'POST'])
 def home():
     name = request.args.get("name", "Name not found")
     surname = request.args.get("surname", "Surname not found")
@@ -13,7 +14,22 @@ def home():
 @app.route('/profile')
 def profile():
     name = request.args.get("name", "Jasurbeki")
-    return render_template("profile.html", name=name)
+    surname = request.args.get("surname", "Surname not found")
+    return render_template("profile.html",
+                           name=name,
+                           surname=surname)
+
+
+@app.route('/login')
+def login():
+    if request.method == "POST":
+        user_email = request.form["email"]
+        user_password = request.form["password"]
+        session['user'] = user_email
+        session['password'] = user_password
+        return redirect(url_for("profile"))
+    else:
+        return render_template("login.html")
 
 # @app.route('/about')
 # def about():
