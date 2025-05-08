@@ -2,9 +2,17 @@ from flask import (Flask, redirect, url_for,
                    render_template, request, session)
 app = Flask(__name__)
 
+app.secret_key = "verysecretkey"
+
 
 @app.route('/', methods=['GET', 'POST'])
 def home():
+    """
+    Using GET request to get name and surname from the url and displat it
+    the home page.
+    :return:
+    name and surname on the home page
+    """
     name = request.args.get("name", "Name not found")
     surname = request.args.get("surname", "Surname not found")
     return render_template("index.html",
@@ -13,14 +21,14 @@ def home():
 
 @app.route('/profile')
 def profile():
-    name = request.args.get("name", "Jasurbeki")
-    surname = request.args.get("surname", "Surname not found")
+    email = session["user"]
+    password = session["password"]
     return render_template("profile.html",
-                           name=name,
-                           surname=surname)
+                           email=email,
+                           password=password)
 
 
-@app.route('/login')
+@app.route('/login', methods=["GET", "POST"])
 def login():
     if request.method == "POST":
         user_email = request.form["email"]
