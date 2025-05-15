@@ -7,7 +7,7 @@
 filename = "food.txt"
 
 # FILE
-# file = open(filename, "r")
+file = open(filename, "r")
 # food = file.read(9)
 # print(food)
 # file.close()

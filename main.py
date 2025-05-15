@@ -306,11 +306,11 @@
 # hello_name()
 # hello_name('Ann')
 
-def average_numb(a=10, b=7):
-    res = (a+b)/2
-    return res
-
-print(average_numb())
+# def average_numb(a=10, b=7):
+#     res = (a+b)/2
+#     return res
+#
+# print(average_numb())
 
 # print(average_numb(a))
 # n = int(input("Enter first number: "))
@@ -320,5 +320,3 @@ print(average_numb())
 # y = average_numb(10,6)
 # print(average_numb(n, m))
 # print(x, y)
-
-
