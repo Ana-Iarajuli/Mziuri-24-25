@@ -1,5 +1,6 @@
 import sqlite3
 
+
 def connection(file):
     return sqlite3.connect(file)
 
@@ -23,13 +24,13 @@ if __name__ == "__main__":
 
 # conn.row_factory = sqlite3.Row
 
-# cursor.execute('''CREATE TABLE books(
-# id INTEGER PRIMARY KEY AUTOINCREMENT,
-# title VARCHAR(50),
-# author VARCHAR(100),
-# price FLOAT
-# );
-# ''')
+cursor.execute('''CREATE TABLE books(
+id INTEGER PRIMARY KEY AUTOINCREMENT,
+title VARCHAR(50),
+author VARCHAR(100),
+price FLOAT
+);
+''')
 
 # cursor.execute('''
 # INSERT INTO books (title, author, price)
